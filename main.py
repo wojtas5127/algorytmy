@@ -120,12 +120,6 @@ class LinkedList:
 # assert first_element.value == returned_first_element
 #
 #
-# last_element = lista.node(at=3)
-# returned_last_element = lista.remove_last()
-# assert last_element.value == returned_last_element
-# assert str(lista) == '1 -> 5 -> 9'
-#
-#
 # second_node = lista.node(at=1)
 # lista.remove(second_node)
 # assert str(lista) == '1 -> 5'
