@@ -84,19 +84,7 @@ class LinkedList:
         self.head = z.next
         return z.value
 
-    def remove_last(self) -> Any:
-        z = self.head
-        y = self.head
-        while z is not None:
-            if z.next is None:
-                w = z
-                y.next = None
-                self.tail = y
-                z = None
-                return w.value
-            else:
-                y = z
-                z = z.next
+  
 
     def remove(self, after: Node) -> Any:
         z = self.head
@@ -160,8 +148,7 @@ class Stack:
     def push(self, element: Any) -> None:
         self._storage.append(element)
 
-    def pop(self) -> Any:
-        return self._storage.remove_last()
+    
 
     def __len__(self):
         return len(self._storage)
